@@ -12,17 +12,31 @@
     }
   </style>
 </head>
-<body class="bg-black text-gray-200">
+<body class="bg-black text-gray-200 ">
 
-  <!-- Navbar -->
-  <nav class="bg-black shadow-md p-4 flex justify-between items-center border-b border-gray-800">
-    <div class="text-2xl font-bold text-red-600">Trendy Tees</div>
-    <div class="space-x-6 hidden md:flex">
+<!-- Navbar (fixed) -->
+  <nav class="bg-black shadow-md p-4 flex justify-between items-center border-b border-gray-800 fixed top-0 left-0 w-full z-50">
+    <div class="text-2xl font-bold text-red-600">Trendy Shoes</div>
+    <div class="space-x-6 flex">
       <a href="#" class="hover:text-red-600">Home</a>
       <a href="#products" class="hover:text-red-600">Products</a>
       <button onclick="toggleCart()" class="hover:text-red-600">Cart 🛒 (<span id="cart-count">0</span>)</button>
     </div>
   </nav>
+
+  <!-- Add top padding so content is not hidden behind navbar -->
+  <div class="pt-20">
+
+
+
+<div class="flex justify-end">
+  <a href="index.html" class="inline-block bg-red-600 text-white font-medium text-sm px-3 py-1 rounded m-4 hover:bg-red-700 transition">
+    ← Back to Portfolio
+  </a>
+</div>
+
+
+
 
   <!-- Hero Section -->
   <header class="bg-[#141414] text-center py-10 border-b border-gray-800">
@@ -142,6 +156,7 @@
 
     <!-- Product Card 10 -->
     <div class="bg-white shadow-md rounded-lg overflow-hidden" data-name="CHELSEA 302" data-price="499">
+      <img src="CHELSEA 304.jpeg" alt="CHELSEA" class="w-full">
       <div class="p-4">
         <h3 class="text-lg font-semibold">CHELSEA 302</h3>
         <p class="text-gray-600">$499</p>
@@ -162,6 +177,8 @@
     </div>
     <button onclick="toggleCart()" class="absolute top-4 right-4 text-gray-400 hover:text-red-600 text-2xl">✖</button>
   </div>
+
+
 
   <!-- Bill Modal -->
   <div id="bill-modal" class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center hidden z-60">
