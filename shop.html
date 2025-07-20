@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <title>Jugad Shoppy - Best Deals</title>
+  <meta name="description" content="Shop best local deals at Jugad Shoppy. Fresh looks, great prices, fast delivery.">
+  <meta name="keywords" content="Jugad Shoppy, ecommerce, local products, best deals">
+  <meta name="author" content="Jugad Shoppy Team">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts for better typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary-red: #E50914; /* Netflix inspired */
+      --primary-black: #141414; /* Dark background */
+      --primary-gray: #333; /* Gray for text */
+      --background-color: #f9fafb;
+    }
+    body {
+      font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--primary-black);
+      color: white;
+      scroll-behavior: smooth; /* Smooth scrolling */
+    }
+    .about-bg {
+      background-image: url('about-bg.jpg'); /* Replace with your background image */
+      background-size: cover;
+      background-position: center;
+      padding: 40px 0; /* Adjust padding as needed */
+    }
+    .button {
+      background-color: var(--primary-red);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s, transform 0.3s; /* Added transform for scaling */
+      display: inline-block; /* Make it inline-block for better alignment */
+      font-size: 0.875rem; /* Smaller font size */
+    }
+    .button:hover {
+      background-color: #b00710; /* Darker red on hover */
+      transform: scale(1.05); /* Scale effect on hover */
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
+    }
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 0.5s forwards; /* Fade-in animation */
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+    .product-card {
+      transition: transform 0.3s, box-shadow 0.3s; /* Transition for product cards */
+    }
+    .product-card:hover {
+      transform: scale(1.05); /* Scale effect on hover */
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow effect on hover */
+    }
+    .zoom-in-out {
+      animation: zoomInOut 2s infinite; /* Animation for zoom in and out */
+    }
+    @keyframes zoomInOut {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.05);
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-gray-900">
+
+<!-- Top Deal Banner -->
+<div class="bg-red-600 text-white text-center py-2 text-lg font-semibold shadow-lg">
+  DEALS WITH LOCAL BRAND
+</div>
+
+<!-- Navbar -->
+<nav class="bg-gradient-to-r from-black to-gray-900 p-4 flex justify-between items-center fixed top-0 left-0 w-full z-50 shadow-lg">
+  <div class="text-2xl font-extrabold text-red-600">JUGADU SHOPPY.COM</div>
+  <div class="space-x-6">
+    <a href="#" class="text-gray-300 hover:text-red-500 font-medium">Home</a>
+    <a href="#products" class="text-gray-300 hover:text-red-500 font-medium">Products</a>
+    <a href="#about" class="text-gray-300 hover:text-red-500 font-medium">About Us</a>
+    <a href="#contact" class="text-gray-300 hover:text-red-500 font-medium">Contact</a>
+  </div>
+  
+</nav>
+
+<div class="pt-12"> <!-- Further reduced padding to cover the gap -->
+
+  <!-- Hero Section -->
+  <header class="bg-gradient-to-r from-black to-gray-900 text-center py-14">
+    <h1 class="text-5xl font-extrabold text-red-600 mb-3">Welcome to Jugadu Shoppy</h1>
+    <p class="text-lg text-gray-300 mb-5">Fresh looks. Great prices. Shop Now!</p>
+    <p class="inline-block button animate-pulse">
+      📞 Call us: 7840938958
+    </p>
+    
+  </header>
+
+  <!-- Products Section -->
+  <section id="products" class="p-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+
+    <!-- Product Card 1 -->
+    <div class="product-card bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition transform hover:-translate-y-1 fade-in">
+      <img src="BELLAVITA CEO WHITE 2.jpeg" alt="BELLAVITA CEO, WHITE OUD" class="w-full h-60 object-cover">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold mb-1">BELLAVITA CEO/WHITE OUD</h3>
+        <p class="text-gray-400">MRP: <span class="line-through">₹849</span></p>
+        <p class="text-gray-400">Price: ₹636 <span class="text-green-600 ml-2">25% off</span></p>
+      </div>
+    </div>
+
+    <!-- Product Card 2 -->
+    <div class="product-card bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition transform hover:-translate-y-1 fade-in">
+      <img src="AIRBUDS CLONE.jpeg" alt="AIRBUDS CLONE" class="w-full h-60 object-cover">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold mb-1">AIRBUDS CLONE</h3>
+        <p class="text-gray-400">MRP: <span class="line-through">₹849</span></p>
+        <p class="text-gray-400">Price: ₹636 <span class="text-green-600 ml-2">25% off</span></p>
+      </div>
+    </div>
+
+    <!-- Product Card 3 -->
+    <div class="product-card bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition transform hover:-translate-y-1 fade-in">
+      <img src="MASTER COPY AIRBUDS CLON.jpeg" alt="MASTER COPY AIRPODS 2 PRO" class="w-full h-60 object-cover">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold mb-1">MASTER COPY AIRPODS 2 PRO</h3>
+        <p class="text-gray-400">MRP: <span class="line-through">₹1500</span></p>
+        <p class="text-gray-400">Price: ₹900 <span class="text-green-600 ml-2">40% off</span></p>
+      </div>
+    </div>
+
+    <!-- Product Card 4 -->
+    <div class="product-card bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition transform hover:-translate-y-1 fade-in">
+      <img src="BELLAVITA WOMENS.jpeg" alt="BELLAVITA WOMENS" class="w-full h-60 object-cover">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold mb-1">BELLAVITA WOMENS</h3>
+        <p class="text-gray-400">MRP: <span class="line-through">₹550</span></p>
+        <p class="text-gray-400">Price: ₹440 <span class="text-green-600 ml-2">25% off</span></p>
+      </div>
+    </div>
+
+    <!-- Product Card 5 -->
+    <div class="product-card bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition transform hover:-translate-y-1 fade-in" id="singlePerfumeCard">
+      <img src="BELLAVITA SINGLE.jpeg" alt="BELLAVITA SINGLE PERFUME" class="w-full h-60 object-cover" id="singlePerfumeImage1">
+      <img src="WOMEN SINGLE  2.jpeg" alt="BELLAVITA SINGLE PERFUME View" class="w-full h-60 object-cover hidden" id="singlePerfumeImage2">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold mb-1">BELLAVITA SINGLE PERFUME</h3>
+        <p class="text-gray-400">MRP: <span class="line-through">₹200</span></p>
+        <p class="text-gray-400">Price: ₹170 <span class="text-green-600 ml-2">15% off</span></p>
+      </div>
+    </div>
+
+    <!-- Product Card 6 -->
+    <div class="product-card bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition transform hover:-translate-y-1 fade-in">
+      <img src="men bellavita.jpeg" alt="MASTER COPY AIRPODS 2 PRO" class="w-full h-60 object-cover">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold mb-1">MENS BELLAVITA PERFUME </h3>
+        <p class="text-gray-400">MRP: <span class="line-through">₹550</span></p>
+        <p class="text-gray-400">Price: ₹439 <span class="text-green-600 ml-2">25% off</span></p>
+      </div>
+    </div>
+
+
+
+
+     <!-- Product Card 5 -->
+    <div class="product-card bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition transform hover:-translate-y-1 fade-in" id="singlePerfumeCard">
+      <img src="noise pulse 2.jpeg"alt="Noise Pulse Grand 2" class="w-full h-60 object-cover" id="noisePulseImage1">
+      <img src="noise pulse 2 2.jpeg" alt="Noise Pulse Grand 2" class="w-full h-60 object-cover hidden" id="noisePulseImage2">
+      <div class="p-4">
+        <h3 class="text-lg font-semibold mb-1">Noise Pulse Grand 2</h3>
+        <p class="text-gray-400">MRP: <span class="line-through">₹1500</span></p>
+        <p class="text-gray-400">Price: ₹1125 <span class="text-green-600 ml-2">25% off</span></p>
+      </div>
+    </div>
+
+     <!-- Product Card 5 -->
+    
+
+  <div class="product-card bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition transform hover:-translate-y-1 fade-in" id="singlePerfumeCard">
+      <img src="AIRSTOCRAT.jpeg" class="w-full h-60 object-cover" id="noisePulseImage1">
+      
+        <h3 class="text-lg font-semibold mb-1">Airstocrat SUITCASE Medium (65cm)</h3>
+        <p class="text-gray-400">MRP: <span class="line-through">₹3000</span></p>
+        <p class="text-gray-400">Price: ₹2225 <span class="text-green-600 ml-2">25% off</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- More Products Coming Soon Section -->
+  <div class="text-center my-8">
+    <p class="text-xl text-gray-300 zoom-in-out">More Products Coming Soon!</p>
+  </div>
+
+  <!-- About Section -->
+  <section id="about" class="about-bg relative text-gray-800 shadow-md rounded-lg mx-4 md:mx-20 mb-10">
+    <div class="absolute inset-0 bg-black opacity-70 rounded-lg"></div> <!-- Dark overlay -->
+    <div class="flex flex-col md:flex-row items-center relative z-10"> <!-- z-10 to bring content above overlay -->
+      <div class="md:w-1/2 p-6 bg-gray-800 bg-opacity-90 rounded-lg"> <!-- Dark background for text area -->
+        <h2 class="text-5xl font-extrabold mb-4 tracking-wide text-red-600">About Us</h2>
+        <p class="text-gray-300 mb-4 text-lg leading-relaxed">
+          Welcome to Jugadu Shoppy, your number one source for all things local. We're dedicated to giving you the very best of products, with a focus on dependability, customer service, and uniqueness.
+        </p>
+        <h3 class="text-3xl font-semibold mb-2">Our Mission</h3>
+        <p class="text-gray-300 mb-4 text-lg leading-relaxed">
+          Our mission is to provide the best local deals on a wide range of products. We aim to bring you fresh looks at great prices with fast delivery.
+        </p>
+        <h3 class="text-3xl font-semibold mb-2">Our Vision</h3>
+        <p class="text-gray-300 mb-4 text-lg leading-relaxed">
+          We envision a marketplace where local brands thrive, and customers find quality products that meet their needs. Join us in exploring the best local brands and products that cater to your needs.
+        </p>
+        <h3 class="text-3xl font-semibold mb-2">Why Choose Us?</h3>
+        <ul class="list-disc list-inside text-gray-300 mb-4 text-lg leading-relaxed">
+          <li>Wide range of products</li>
+          <li>Competitive pricing</li>
+          <li>Fast and reliable delivery</li>
+          <li>Exceptional customer service</li>
+        </ul>
+      </div>
+      <div class="md:w-1/2">
+        <img src="RO.IMAGE.jpg" alt="About Jugad Shoppy" class="w-full h-full object-cover rounded-lg shadow-lg">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-10 text-center bg-gray-800 shadow-md rounded-lg mx-4 md:mx-20 mb-10">
+    <h2 class="text-4xl font-bold mb-4">Contact Us</h2>
+    <p class="text-gray-300 mb-4">Have questions? Reach out to us!</p>
+    <p class="text-lg font-semibold">Email: support@jugadshoppy.com</p>
+    <p class="text-lg font-semibold">Phone: 7840938958</p>
+  </section>
+
+  <!-- Back to Portfolio Button -->
+  <div class="text-center mb-10">
+    <a href="index.html" class="button">Back to Portfolio</a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 text-center p-6 mt-10">
+    <p>&copy; 2025 Jugad Shoppy | <a href="#" class="hover:text-red-500">About</a> | <a href="#" class="hover:text-red-500">Contact</a> | <a href="#" class="hover:text-red-500">Terms</a></p>
+  </footer>
+
+</div>
+
+<script>
+ document.addEventListener('DOMContentLoaded', function() {
+  // BELLAVITA SINGLE PERFUME Card
+  const bellavitaSinglePerfumeCard = document.getElementById('bellavitaSinglePerfumeCard');
+  const bellavitaSingleImage1 = document.getElementById('bellavitaSingleImage1');
+  const bellavitaSingleImage2 = document.getElementById('bellavitaSingleImage2');
+
+  // Function to toggle images for BELLAVITA SINGLE PERFUME
+  function toggleBellavitaSingleImages() {
+    if (bellavitaSingleImage1.classList.contains('hidden')) {
+      bellavitaSingleImage1.classList.remove('hidden');
+      bellavitaSingleImage2.classList.add('hidden');
+    } else {
+      bellavitaSingleImage1.classList.add('hidden');
+      bellavitaSingleImage2.classList.remove('hidden');
+    }
+  }
+
+  // Set interval to change images every 2 seconds for BELLAVITA SINGLE PERFUME
+  const bellavitaSingleIntervalId = setInterval(toggleBellavitaSingleImages, 2000);
+
+  // Add click event to toggle images manually for BELLAVITA SINGLE PERFUME
+  bellavitaSinglePerfumeCard.addEventListener('click', function() {
+    toggleBellavitaSingleImages();
+    clearInterval(bellavitaSingleIntervalId); // Clear the interval on click
+  });
+
+  // Noise Pulse Grand 2 Card
+  const noisePulseImageCard = document.getElementById('noisePulseImageCard');
+  const noisePulseImage1 = document.getElementById('noisePulseImage1');
+  const noisePulseImage2 = document.getElementById('noisePulseImage2');
+
+  // Function to toggle images for Noise Pulse Grand 2
+  function toggleNoisePulseImages() {
+    if (noisePulseImage1.classList.contains('hidden')) {
+      noisePulseImage1.classList.remove('hidden');
+      noisePulseImage2.classList.add('hidden');
+    } else {
+      noisePulseImage1.classList.add('hidden');
+      noisePulseImage2.classList.remove('hidden');
+    }
+  }
+
+  // Set interval to change images every 2 seconds for Noise Pulse Grand 2
+  const noisePulseIntervalId = setInterval(toggleNoisePulseImages, 2000);
+
+  // Add click event to toggle images manually for Noise Pulse Grand 2
+  noisePulseImageCard.addEventListener('click', function() {
+    toggleNoisePulseImages();
+    clearInterval(noisePulseIntervalId); // Clear the interval on click
+  });
+});
+
+
+  // noise //
+
+document.addEventListener('DOMContentLoaded', function() {
+  // BELLAVITA SINGLE PERFUME Card
+  const singlePerfumeCard = document.getElementById('singlePerfumeCard');
+  const singlePerfumeImage1 = document.getElementById('singlePerfumeImage1');
+  const singlePerfumeImage2 = document.getElementById('singlePerfumeImage2');
+
+  // Function to toggle images for BELLAVITA SINGLE PERFUME
+  function toggleSinglePerfumeImages() {
+    if (singlePerfumeImage1.classList.contains('hidden')) {
+      singlePerfumeImage1.classList.remove('hidden');
+      singlePerfumeImage2.classList.add('hidden');
+    } else {
+      singlePerfumeImage1.classList.add('hidden');
+      singlePerfumeImage2.classList.remove('hidden');
+    }
+  }
+
+  // Set interval to change images every 2 seconds for BELLAVITA SINGLE PERFUME
+  const singlePerfumeIntervalId = setInterval(toggleSinglePerfumeImages, 2000);
+
+  // Add click event to toggle images manually for BELLAVITA SINGLE PERFUME
+  singlePerfumeCard.addEventListener('click', function() {
+    toggleSinglePerfumeImages();
+    clearInterval(singlePerfumeIntervalId); // Clear the interval on click
+  });
+
+  // Noise Pulse Grand 2 Card
+  const noisePulseImageCard = document.getElementById('noisePulseImageCard');
+  const noisePulseImage1 = document.getElementById('noisePulseImage1');
+  const noisePulseImage2 = document.getElementById('noisePulseImage2');
+
+  // Function to toggle images for Noise Pulse Grand 2
+  function toggleNoisePulseImages() {
+    if (noisePulseImage1.classList.contains('hidden')) {
+      noisePulseImage1.classList.remove('hidden');
+      noisePulseImage2.classList.add('hidden');
+    } else {
+      noisePulseImage1.classList.add('hidden');
+      noisePulseImage2.classList.remove('hidden');
+    }
+  }
+
+  // Set interval to change images every 2 seconds for Noise Pulse Grand 2
+  const noisePulseIntervalId = setInterval(toggleNoisePulseImages, 2000);
+
+  // Add click event to toggle images manually for Noise Pulse Grand 2
+  noisePulseImageCard.addEventListener('click', function() {
+    toggleNoisePulseImages();
+    clearInterval(noisePulseIntervalId); // Clear the interval on click
+  });
+});
+
+ 
+</script>
+
+
+
+</body>
+</html>
